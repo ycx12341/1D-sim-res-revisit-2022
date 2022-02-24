@@ -1,5 +1,9 @@
 ## Gradient Matching revisit 2022 ##
-This folder contains all the essential code and results regarding the further analysis on the gradient matching approach presented in Xiao et al.
+This folder contains all the essential code and results regarding the further analysis on the gradient matching approach presented in Xiao et al. Due to the rapid deterioration in the accuracy of the previous parameter estimates when the level of perturbation increases, we attempted to improve the situation by making the following adjustments: 
+
+1. Change the error model used to generate perturbed datasets (Gaussian error models instead of gamma) 
+2. Change the type of Generalized Additive Models (GAMs) fitted to the datasets (Gaussian models with identity links instead of Gamma models with log links) 
+3. Reconstruct the non-flux boundary conditions in the PDE numerical solver by adapting the "imaginary cells" technique.
 
 File PDE_GradientMatching_Main and PDE_GradientMatching_Functions are used to produce parameter estimates at different CVs.
 
