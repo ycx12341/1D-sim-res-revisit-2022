@@ -1,4 +1,4 @@
-## Gaussian errors (imaginary cells BC with full data) ##
+## Gaussian errors (normal BC with full data) ##
 This folder contains all the essential code and results regarding the gradient matching attempt using Gaussian GAMs with identity link functions fitted to full datasets perturbed by Gaussian errors. Normal no-flux boundary condition is used when generating unperturbed dataset with the PDE numerical solver. 
 
 File **PDE_GradientMatching_Main** and **PDE_GradientMatching_Functions** are used to produce parameter estimates at different CVs, the results are stored in folder **SimRes_ests**.
