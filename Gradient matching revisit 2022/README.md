@@ -7,6 +7,8 @@ This folder contains all the essential code and results regarding the further an
 
 We conducted four more different attempts using the same gradient matching scheme, but adapting different combinations of the adjustments mentioned above: 
 
+The .txt files store the final parameter estimates of each attempt. The corresponding plots of these parameter estimates are generated in **Parameter_estimations.m** and saved as .png files in the current directory. 
+
 Folder **Gamma errors (imaginary cells BC with truncated data)** contains all the results obtained using gamma GAMs with log link functions fitted to truncated datasets perturbed by gamma errors. No-flux boundary condition constructed using "imaginary cells" technique is used to generate the datasets.
 
 Folder **Gamma errors (normal BC with truncated data)** contains all the results obtained using the original method - which was presented in Xiao et al. 2021.
