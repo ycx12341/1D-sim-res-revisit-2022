@@ -1,4 +1,4 @@
-## Gradient plots##
+## Gradient plots ##
 
 The folder **SimRes_ests** contains the results of parameter estimates at 5 different level of measurement errors.
 
