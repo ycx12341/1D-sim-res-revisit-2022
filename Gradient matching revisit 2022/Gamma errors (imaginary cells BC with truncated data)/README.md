@@ -1,20 +1,17 @@
 ## Gamma errors (imaginary cells BC with truncated data) ##
 This folder contains all the essential code and results regarding the gradient matching attempt using Gamma GAMs with log link functions fitted to truncated datasets perturbed by 
-gamma errors (No-flux BC is constructed using the imaginary cells technique). 
+gamma errors. No-flux BC boundary condition constructed using the "imaginary cells" technique is used when generating unperturbed dataset with the PDE numerical solver. 
 
-File PDE_GradientMatching_Main and PDE_GradientMatching_Functions are used to produce parameter estimates at different CVs.
+File **PDE_GradientMatching_Main** and **PDE_GradientMatching_Functions** are used to produce parameter estimates at different CVs.
 
-File PDE_GradientMatching_FixPar and PDE_GradientMatching_Functions_FixPar are used to produce parameter estimates at different CVs with certain parameter values constrained.
+File **Post_process** is used to process all the simulation results and obtain the final parameter estimates.
 
-File PDE_GradientMatching_PostProcess is used to process all the collected data and obtain the final results presented in the paper.
+File **PDE_GradientMatching_BootstrapSD** is used to compute the standard deviations (SDs) of the parameter estimates using non-parametric bootstrap.
 
-File Convergence check of optimizations checks the convergence of optimizations performed to obtain the original results, in order to ensure the parameter estimates are obtained after the convergence in optim is reached.
+File **SD analysis** is used to generate the plots of the SDs obtained using different methods (i.e. true SDs, analytical SDs and bootstrap SDs) at different levels of perturbations.  
 
-File Plot_patterns is used to plot the invasion pattern based on parameter values chosen.
 
-Folder Gradient plots contains all the plots of averaged and explicit spatial/temporal gradients involved in the PDE system studied in the manuscript.
-
-Folder Possible solutions to improve accuracy contains all the code and results that aim to improve the accuracy of parameter estimates.
+Folder **Gradient plots** contains all the plots of averaged spatial/temporal gradients involved in the PDE system.
 
 Folder Results without measurement errors contains the reference gradients predicted by GAM in the gradient matching scheme with no measurement errors added to the data and the true gradients calculated by the finite difference scheme.
 
