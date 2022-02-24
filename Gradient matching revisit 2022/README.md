@@ -1,5 +1,5 @@
-Gradient Matching
-This folder contains all the essential code and results regarding the gradient matching approach presented in Xiao et al.
+## Gradient Matching revisit 2022 ##
+This folder contains all the essential code and results regarding the further analysis on the gradient matching approach presented in Xiao et al.
 
 File PDE_GradientMatching_Main and PDE_GradientMatching_Functions are used to produce parameter estimates at different CVs.
 
