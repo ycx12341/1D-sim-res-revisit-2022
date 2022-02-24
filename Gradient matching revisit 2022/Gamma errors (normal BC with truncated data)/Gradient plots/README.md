@@ -8,4 +8,4 @@ The .R file **Gradients averaged over time and data sets** generates the spatial
 
 The .m file **Gradient_plots** plots the averaged spatial/temporal gradients based on the .txt files generated previously, then save them as the .png files in the folder.
 
-The reference gradients predicted by GAM without measurement errors are stored in **Reference gradients GAM.txt**, which were generated in folder **No measurement errors**, check there for more details of these two files.
+The reference gradients predicted by GAM without measurement errors are stored in **Reference gradients GAM.txt**, which were generated in folder **No measurement errors**, check there for more details of this files.
