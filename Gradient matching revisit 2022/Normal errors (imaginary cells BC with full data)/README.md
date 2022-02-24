@@ -1,6 +1,5 @@
-## Gamma errors (imaginary cells BC with truncated data) ##
-This folder contains all the essential code and results regarding the gradient matching attempt using Gamma GAMs with log link functions fitted to truncated datasets perturbed by 
-gamma errors. No-flux BC boundary condition constructed using the "imaginary cells" technique is used when generating unperturbed dataset with the PDE numerical solver. 
+## Gaussian errors (imaginary cells BC with full data) ##
+This folder contains all the essential code and results regarding the gradient matching attempt using Gaussian GAMs with identity link functions fitted to full datasets perturbed by Gaussian errors. No-flux BC boundary condition constructed using the "imaginary cells" technique is used when generating unperturbed dataset with the PDE numerical solver. 
 
 File **PDE_GradientMatching_Main** and **PDE_GradientMatching_Functions** are used to produce parameter estimates at different CVs, the results are stored in folder **SimRes_ests**.
 
