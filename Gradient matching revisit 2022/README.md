@@ -1,28 +1,20 @@
 ## Gradient Matching revisit 2022 ##
-This folder contains all the essential code and results regarding the further analysis on the gradient matching approach presented in Xiao et al. Due to the rapid deterioration in the accuracy of the previous parameter estimates when the level of perturbation increases, we attempted to improve the situation by making the following adjustments: 
+This folder contains all the essential code and results regarding the further analysis on the gradient matching approach presented in Xiao et al. 2021. Due to the rapid deterioration in the accuracy of the previous parameter estimates when the level of perturbation increases, we attempted to improve the situation by making the following adjustments: 
 
 1. Change the error model used to generate perturbed datasets (Gaussian error models instead of gamma) 
 2. Change the type of Generalized Additive Models (GAMs) fitted to the datasets (Gaussian models with identity links instead of Gamma models with log links) 
-3. Reconstruct the non-flux boundary conditions in the PDE numerical solver by adapting the "imaginary cells" technique.
+3. Reconstruct the no-flux boundary conditions in the PDE numerical solver by adapting the "imaginary cells" technique.
 
-File PDE_GradientMatching_Main and PDE_GradientMatching_Functions are used to produce parameter estimates at different CVs.
+We conducted four more different attempts using the same gradient matching scheme, but adapting different combinations of the adjustments mentioned above: 
 
-File PDE_GradientMatching_FixPar and PDE_GradientMatching_Functions_FixPar are used to produce parameter estimates at different CVs with certain parameter values constrained.
+Folder **Gamma errors (imaginary cells BC with truncated data)** contains all the results obtained using gamma GAMs with log link functions fitted to truncated datasets perturbed by gamma errors. No-flux boundary condition constructed using "imaginary cells" technique is used.
 
-File PDE_GradientMatching_PostProcess is used to process all the collected data and obtain the final results presented in the paper.
+Folder **Gamma errors (normal BC with truncated data)** contains all the results obtained using the original method - which was presented in Xiao et al. 2021.
 
-File Convergence check of optimizations checks the convergence of optimizations performed to obtain the original results, in order to ensure the parameter estimates are obtained after the convergence in optim is reached.
+Folder **Normal errors (imaginary cells BC with full data)** contains all the results obtained using Gaussian GAMs with identity link functions fitted to full datasets perturbed by Gaussian errors. No-flux boundary condition constructed using "imaginary cells" technique is used.
 
-File Plot_patterns is used to plot the invasion pattern based on parameter values chosen.
+Folder **Normal errors (normal BC with full data)** contains all the results obtained using Gaussian GAMs with identity link functions fitted to full datasets perturbed by Gaussian errors. Normal no-flux boundary condition is used.
 
-Folder Gradient plots contains all the plots of averaged and explicit spatial/temporal gradients involved in the PDE system studied in the manuscript.
+See the README.md file of each folder for more details.
 
-Folder Possible solutions to improve accuracy contains all the code and results that aim to improve the accuracy of parameter estimates.
-
-Folder Results without measurement errors contains the reference gradients predicted by GAM in the gradient matching scheme with no measurement errors added to the data and the true gradients calculated by the finite difference scheme.
-
-Folder Sensitivity tests results contains all the results of the three sensitivity tests mentioned in the manuscript.
-
-Folder SimRes_ests and SimRes_ests_converge_check contains the original results and the updated results with convergence being checked.
-
-All simulation results were generated using R 3.5.3 “Great Truth”.
+All simulation results were generated using R 4.0.3 “Bunny-Wunnies Freak Out”.
