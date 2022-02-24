@@ -8,7 +8,7 @@ File **Post_process** is used to process all the simulation results and obtain t
 
 File **PDE_GradientMatching_BootstrapSD** is used to compute the SDs of the parameter estimates using non-parametric bootstrap and store them in folder **SimRes_boots2**.
 
-File **SD analysis** is used to generate the plots of the SDs obtained using different methods (i.e. true SDs, analytical SDs and bootstrap SDs) at different levels of perturbations. These plots are saved as the .png files in this folder.   
+File **SD analysis** is used to generate the plots of the SDs obtained using different methods (i.e. true SDs, analytical SDs and bootstrap SDs) at different levels of perturbations. These plots are saved as the **.png** files in this folder.   
 
 Folder **Gradient plots** contains all the plots of averaged spatial/temporal gradients involved in the PDE system.
 
