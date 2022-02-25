@@ -19,4 +19,4 @@ Folder **Normal errors (normal BC with full data)** contains all the results obt
 
 See the README.md file of each folder for more details.
 
-All simulation results were generated using R 4.0.3 “Bunny-Wunnies Freak Out”.
+Some simulation results of the original attempt in folder **Gamma errors (normal BC with truncated data)** (also presented in Xiao et al.2021) were generated using R 3.5.3 "Great Truth", while the other simulation results were generated using R 4.0.3 “Bunny-Wunnies Freak Out”.
