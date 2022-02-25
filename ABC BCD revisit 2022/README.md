@@ -1,11 +1,9 @@
 ## ABC BCD revisit 2022 ##
-This folder contains all the essential code and results regarding the further analysis on the gradient matching approach presented in Xiao et al. 2021. Due to the rapid deterioration in the accuracy of the previous parameter estimates when the level of perturbation increases, we attempted to improve the situation by making the following adjustments: 
+This folder contains all the essential code and results regarding the further analysis on the ABC-BCD approach presented in Xiao et al. 2021. We attempted to add perturbations to the main reference datasets in the similar fashion as we did in the gradient matching approach, then investigate how they will affect the accuracy of the ABC parameter estimates: 
 
-1. Change the error model used to generate perturbed datasets (Gaussian error models instead of gamma) 
-2. Change the type of Generalized Additive Models (GAMs) fitted to the datasets (Gaussian models with identity links instead of Gamma models with log links) 
-3. Reconstruct the no-flux boundary conditions in the PDE numerical solver by adapting the "imaginary cells" technique.
-
-We conducted four more different attempts using the same gradient matching scheme, but adapting different combinations of the adjustments mentioned above: 
+1. Same levels of perturbations are used here as the gradient matching attempt (See folder **Gradient matching revisit 2022**). 
+2. For each level of perturbations, 10 perturbed datasets are generated and to be evaluated by our ABC-BCD scheme, which results in 50 perturbed datasets in total.  
+3. The final parameter estimates regarding each level of perturbation is taken as the average final parameter estimates of its corresponding 10 perturbed datasets.    
 
 The .txt files store the final parameter estimates of each attempt. The corresponding plots of these parameter estimates are generated in **Parameter_estimations.m** and saved as .png files in the current directory. 
 
