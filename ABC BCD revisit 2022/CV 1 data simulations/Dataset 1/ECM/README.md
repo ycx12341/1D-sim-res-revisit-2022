@@ -12,6 +12,6 @@ Files **Round x parameters 10000 ecm.txt** contain the parameter values being ev
 
 File **mean_var_obs.txt** contains the reference summary statistics. 
 
-File **BCD_results_ecm.zip** contains all the Bhattacharyya distance results regarding the evaluations of the ECM density profile, written in .rds files.  
+File **BCD_results_ecm_r1-3.zip** contains all the Bhattacharyya distance results regarding the evaluations of the ECM density profile, written in .rds files.  
 
 Folder **ECM MDE** and **TC ECM MDE** have similar structures to this folder. 
