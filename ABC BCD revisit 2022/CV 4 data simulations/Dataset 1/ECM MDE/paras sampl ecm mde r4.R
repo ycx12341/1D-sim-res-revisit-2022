@@ -54,13 +54,6 @@ write.table(ests, "bcd_ecm_mde_r4.txt")
 # Calculate and record the average summary statistics of the parameters 
 # evaluated in the current round, the stopping criterion (90% reduction in the 
 # mean summary statistics of the initial parameters) has not been met yet!
-
-# Calculate and record the average summary statistics of the parameters 
-# evaluated in the current round, the stopping criterion (90% reduction in the 
-# mean summary statistics of the initial parameters) has been met! We record the
-# values of $\eta$, $d_m$ and $\alpha$ and proceed to the evaluations of all
-# three density profiles!
-
 bcd.ecm.mde.r4 <- unname(ests)
 ind.nan.ecm.mde.r4 <- which(is.na(bcd.ecm.mde.r4[,2]))
 bcd.ecm.mde.r4.valid <- bcd.ecm.mde.r4[-ind.nan.ecm.mde.r4,]

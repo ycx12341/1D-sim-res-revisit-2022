@@ -1,4 +1,4 @@
-### ABC scheme ########
+### ABC scheme - Noisy data generation main file ########
 ### Author: Yunchen Xiao & Len Thomas ###########
 rm(list = ls())
 #Source companion functions
@@ -80,8 +80,6 @@ ref.data <- generate.reference.data(n.x11, max.x11, dt, max.t,
                                     dn, gamma, eta, dm, alpha, rn, beta, n0, f0, m0)
 
 ### Generate noisy data ####
-
-### Run simulations ####
 
 if(save.sims) {
   if(!dir.exists(save.sims.dir)) dir.create(save.sims.dir)

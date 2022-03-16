@@ -52,7 +52,11 @@ write.table(ests, "bcd_all3_r9.txt")
 
 # Calculate and record the average summary statistics of the parameters in the 
 # current round, the stopping criterion (98% reduction in the average summary
-# statistics of the initial parameters) has not been met yet!
+# statistics of the initial parameters) has not been met yet! However, based on
+# the minimum discrepancy results of the current round, it is clear that 98% 
+# reduction is impossible. The stopping criteria is redefined to reduction of 
+# average discrepancy measurement less than 5% compare to that of the previous
+# round, which has been met now! 
 bcd.all3.r9 <- unname(ests)
 ind.nan.all3.r9 <- which(is.na(bcd.all3.r9[,2]))
 bcd.all3.r9.valid <- bcd.all3.r9[-ind.nan.all3.r9,]

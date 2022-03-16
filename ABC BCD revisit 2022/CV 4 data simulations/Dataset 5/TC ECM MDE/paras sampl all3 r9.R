@@ -52,10 +52,6 @@ write.table(ests, "bcd_all3_r9.txt")
 
 # Calculate and record the average summary statistics of the parameters in the 
 # current round, the stopping criterion (98% reduction in the average summary
-# statistics of the initial parameters) has not been met yet!
-
-# Calculate and record the average summary statistics of the parameters in the 
-# current round, the stopping criterion (98% reduction in the average summary
 # statistics of the initial parameters) has not been met yet! However, based on
 # the minimum discrepancy results of the current round, it is clear that 98% 
 # reduction is impossible. The stopping criteria is redefined to reduction of 
