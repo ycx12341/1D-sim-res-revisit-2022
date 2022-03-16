@@ -9,7 +9,7 @@ File **PDE_ABC_NoisyDataGeneration.R** and **PDE_ABC_NoisyDataGeneration_Functio
 
 File **mean_var_ref.m** generates the summary statistics (mean & variance of each variable's concentration/density at non-zero integer timepoints in the domain) of the main reference dataset and store them in **mean_ver_obs.txt**. 
 
-Folder **CV 1 data simulation** contains all the results regarding the perturbed datasets under the first level of perturbations (cv = 0.01).   
+Folder **CV x data simulation** contains all the results regarding the perturbed datasets under the corresponding level of perturbations (cv = x).   
 
 See the README.md file of each folder for more details.
 
