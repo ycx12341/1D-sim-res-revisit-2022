@@ -1,13 +1,13 @@
 ## Gamma errors (normal BC with truncated data) ##
 This folder contains all the essential code and results regarding the original gradient matching approach presented in Xiao et al. 2021.  
 
-File **PDE_GradientMatching_Main** and **PDE_GradientMatching_Functions** are used to produce parameter estimates at different CVs. 
+File **PDE_GradientMatching_Main** and **PDE_GradientMatching_Functions** produce parameter estimates at different CVs. 
 
 File **Convergence check of optimizations** checks the convergence of optimizations performed to obtain the original results, in order to ensure the parameter estimates are obtained after the convergence in **optim** is reached. 
 
-File **Post_process** is used to process all the simulation results, obtain the final parameter estimates and standard deviations then store them in **Parameter estimates 5 cv.txt**, **Mean SD estimates 5 cv.txt**, **True SD estimates 5 cv.txt** and **Bootstrap SD estimates 5 cv.txt**.
+File **Post_process** processes all the simulation results, obtain the final parameter estimates and standard deviations then store them in **Parameter estimates 5 cv.txt**, **Mean SD estimates 5 cv.txt**, **True SD estimates 5 cv.txt** and **Bootstrap SD estimates 5 cv.txt**.
 
-File **PDE_GradientMatching_BootstrapSD** is used to compute the SDs of the parameter estimates using non-parametric bootstrap and store them in folder **SimRes_boots2**.
+File **PDE_GradientMatching_BootstrapSD** computes the SDs of the parameter estimates using non-parametric bootstrap and store them in folder **SimRes_boots2**.
 
 File **SD analysis** is used to generate the plots of the SDs obtained using different methods (i.e. true SDs, analytical SDs and bootstrap SDs) at different levels of perturbations. These plots are saved as the .png files in this folder.
 
