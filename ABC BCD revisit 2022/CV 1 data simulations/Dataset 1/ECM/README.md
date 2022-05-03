@@ -2,9 +2,9 @@
 
 This folder contains all the essential code and results regarding the evaluations on the ECM density profile. 
 
-Files **paras sampl ecm rx.R** read in the parameters to be evaluated in round x, then resample the parameters to be evaluated in the next round. (In round 1, the parameter values are sampled from the initial distributions.)
+Files **paras sampl ecm rx.R** reads in the parameters to be evaluated in round x, then resample the parameters to be evaluated in the next round. (In round 1, the parameter values are sampled from the initial distributions.)
 
-File **Automatic.R** contains all the necessary R functions of the ABC scheme.
+File **Automatic.R** contains all the necessary R functions of the ABC-BCD scheme.
 
 Files **bcd_ecm_rx.txt** contain the Bhattacharyya distance results of the parameters being evaluated in round x.
 
