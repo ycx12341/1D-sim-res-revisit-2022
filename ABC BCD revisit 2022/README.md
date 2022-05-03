@@ -3,7 +3,8 @@ This folder contains all the essential code and results regarding the further an
 
 1. Same levels of Gaussian perturbations are used here as the gradient matching attempt (See folder **Gradient matching revisit 2022**). 
 2. For each level of perturbations, 10 perturbed datasets were generated and evaluated by our ABC-BCD scheme. Hence we evaluated 50 perturbed datasets in total.  
-3. The final parameter estimates regarding each level of perturbation was taken as the average final parameter estimates of its corresponding 10 perturbed datasets.    
+3. The final parameter estimates regarding each level of perturbation was taken as the average final parameter estimates of its corresponding 10 perturbed datasets. 
+4. For the simulation study of the 4th and 5th cv level (cv = 0.075 and 0.01), the stopping criterion "terminate the simulation once the averaged Bhattacharyya distance has been reduced by 98% compared to that of the initial round" could not be met when evaluating all 3 density profiles together. Hence, for the simulation studies at these two cv levels, we changed the stopping criterion to a relative one instead of an absolute one: "terminate the simulation once the reduction of averaged Bhattacharrya distance is less than 5% compared to that of the previous round".     
 
 File **PDE_ABC_NoisyDataGeneration.R** and **PDE_ABC_NoisyDataGeneration_Functions.R** generate the perturbed datasets at each level of perturbations and store them in folder **Noisy_Data**. 
 
